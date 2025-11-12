@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squad 02: 99ª Divisão de Testes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a1a2f;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 60vh; /* ajustado para não cortar rostos */
+      object-fit: contain;
+      background-color: #000;
+      filter: brightness(80%);
+    }
+
+    header h1 {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.5rem;
+      color: #ffdd00;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    section h2 {
+      color: #ffdd00;
+      border-left: 6px solid #ffdd00;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .integrantes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #13294b;
+      border: 2px solid #ffdd00;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 220px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #ffdd00;
+    }
+
+    /* === Botões de contato === */
+    .contact-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ffdd00;
+      color: #0a1a2f;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #ffe866;
+      transform: scale(1.05);
+    }
+
+    .rodape {
+      text-align: center;
+      background-color: #061120;
+      padding: 2rem;
+      margin-top: 3rem;
+      color: #ffdd00;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="bb.jpeg" alt="Squad 02: 99ª Divisão de Testes">
+  </header>
+
+  <section id="sobre" class="fade-in">
+    <h2>🕵️‍♀️ Sobre o Squad</h2>
+    <p>Inspirados pelo espírito da 99ª Delegacia do Brooklyn, nosso time investiga os mistérios do código, caçando regressões e garantindo que cada nova funcionalidade preserve a integridade do sistema. Somos uma equipe de detetives digitais, sempre prontos para resolver o próximo caso de bug!</p>
+  </section>
+
+  <section id="missao" class="fade-in">
+    <h2>🎯 Missão</h2>
+    <p>Garantir que nenhuma regressão passe despercebida. Testar, analisar e capturar falhas antes que causem o caos. Cada deploy é uma operação, e cada caso resolvido é mais um ponto para a justiça do QA!</p>
+  </section>
+
+  <section id="integrantes" class="fade-in">
+    <h2>👩‍💻 Integrantes</h2>
+    <div class="integrantes">
+      <div class="card">
+        <h3>Detetive Ana Beatriz</h3>
+        <p>Analista de Regressão</p>
+        <a class="contact-btn" href="https://www.linkedin.com/in/ana-beatriz-cardoso-971063358" 
+           target="_blank" rel="noopener noreferrer">🔎 Me contate para investigar um bug!</a>
+      </div>
+
+      <div class="card">
+        <h3>Detetive Antônio Noberto</h3>
+        <p>Caçador de Bugs</p>
+        <a class="contact-btn" href="https://www.linkedin.com/in/antonio-noberto-b6526612b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">🕵️‍♂️ Chame-me para interrogar um erro!</a>
+      </div>
+
+      <div class="card">
+        <h3>Capitã Adyla Oliveira</h3>
+        <p>Gerente de Qualidade</p>
+        <a class="contact-btn" href="https://www.linkedin.com/in/adyla-oliveira-a9854120b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">📋 Reporte um caso para a capitã!</a>
+      </div>
+
+      <div class="card">
+        <h3>Detetive Alessandra Verçosa</h3>
+        <p>Automação e Humor</p>
+        <a class="contact-btn" href="https://www.linkedin.com/in/alessandra-ver%C3%A7osa-7a018414b/" target="_blank" rel="noopener noreferrer">🤖 Me chame para automatizar o interrogatório!</a>
+      </div>
+
+      <div class="card">
+        <h3>Detetive Camila Vitória</h3>
+        <p>Automação e Seriedade</p>
+        <a class="contact-btn" href="#" target="_blank" rel="noopener noreferrer">⚙️ Vamos resolver esse caso com lógica!</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="casos" class="fade-in">
+    <h2>🔍 Casos Resolvidos</h2>
+    <p>✔️ Login com token inválido — corrigido em 2 horas.<br>
+       ✔️ Carrinho não atualizava — regressão detectada e eliminada.<br>
+       ✔️ API retornava status 500 — caso fechado com sucesso.<br>
+       ✔️ Layout quebrava em mobile — ajustado pelo time front-end.<br><br>
+       Viu algo suspeito no código ou quer abrir um novo caso? O Squad 02 está de plantão 24h! 🚨
+    </p>
+  </section>
+
+  <footer class="rodape">
+    99ª Divisão de Testes — A Justiça do Código Nunca Dorme ⚡
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.3 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
